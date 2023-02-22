@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+:root {
+   /*  ## Colors */
+
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(212, 45%, 89%);
+--Grayish-blue: hsl(220, 15%, 55%);
+--Dark-blue: hsl(218, 44%, 22%);
+
+/* ## Typography
+
+### Body Copy */
+
+--Font-size: 15px;
+--Title-size: 1.5rem;
+
+/* ### Font */
+
+--Family: 'Outfit', sans-serif;
+--BOLD: 700; 
+
+
+
+}
+
+/* GENERAL STYLES */
+
+
+
+body {
+    
+    margin-top: 44px; /* for aligning with frontendmentor screenshot */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-size: var(--Font-size);
+    font-family: var(--Family);
+    background-color: var(--Light-gray);
+    color: var(--Grayish-blue);
+    gap: 30px;
+}
+
+/* utils */
+.round {
+     border-radius: 15px;
+}
+
+.center {
+    text-align: center;
+}
+/* STYLES */
+
+.card {
+    display: grid;
+    gap: 1.1rem;
+    width: clamp(310px,16rem ,330px);
+    background-color: var(--White);
+    padding: 1rem;
+}
+
+.card__title {
+    color: var(--Dark-blue);
+    font-size: var(--Title-size);
+    font-weight: var(--BOLD);
+}
+
+.card__text {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
